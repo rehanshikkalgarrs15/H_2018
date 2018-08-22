@@ -1,0 +1,25 @@
+'''
+	Created on 28/2/2017.
+	Objective: total number of videos, classfiersFiles, yandetecting folders
+	Created by : SKR 
+'''
+
+import Paths
+
+def getVideoCount():
+	return Paths.totalVideos()
+
+class ClassifierFiles:
+	faceDetector = 'hello'
+	eyeDetector = 'classifiers/haarcascade_eye.xml'
+	noseDetector = 'classifiers/haarcascade_nose.xml'
+	mouthDetector = 'classifiers/'
+	shapePredicter = 'classifiers/shape_predictor_68_face_landmarks.dat'
+
+class yawnFolder:
+	yes = 'yawn/'
+	no = 'yawnnot/'
+
+class Threshold:
+	eye = 4.5
+	mouth = 20

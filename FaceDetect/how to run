@@ -1,0 +1,14 @@
+go to openface directory
+
+1) ./util/align-dlib.py ./training-images/ align outerEyesAndNose ./aligned-images/ --size 96
+
+	this generates cropped training images
+
+2) ./batch-represent/main.lua -outDir ./generated-embeddings/ -data ./aligned-images/
+
+
+3)./demos/classifier.py train ./generated-embeddings/
+
+4)./demos/classifier.py infer ./generated-embeddings/classifier.pkl testimage.jpg
+
+
